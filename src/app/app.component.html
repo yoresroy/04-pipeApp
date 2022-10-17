@@ -1,10 +1,13 @@
-<h1>{{ nombre | uppercase }}</h1>
-<h1>{{ nombre | lowercase }}</h1>
-<h1>{{ valor | number }}</h1>
-<h1>{{ obj | json }}</h1>
+
+<div class="text-layout">
+    <h1>{{ nombre | uppercase }}</h1>
+    <h1>{{ nombre | lowercase }}</h1>
+    <h1>{{ valor | number }}</h1>
+    <h1>{{ obj | json }}</h1>
+</div>
 
 
 
-<button (click)="mostrarNombre()" >
-cambiar
+<button pButton 
+    label="Cambiar Nombre"(click)="mostrarNombre()" >
 </button>
