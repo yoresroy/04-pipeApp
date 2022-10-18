@@ -8,6 +8,17 @@
 
 
 
-<button pButton 
+<button pButton class="p-button-help" icon="pi pi-bell" iconPos="right"
     label="Cambiar Nombre"(click)="mostrarNombre()" >
 </button>
+
+
+
+<br>
+
+<p-card [header]="nombre | titlecase"
+
+    subheader="ESTO ES UN SUB">
+    
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+</p-card>
