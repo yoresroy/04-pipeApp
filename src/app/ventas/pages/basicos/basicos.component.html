@@ -6,25 +6,22 @@
 </div>
 
 <div class="grid">
-    
+
     <div class="col-4">
-        <p-card header="uppercase"
-            [subheader]="nombreLower | uppercase">
-             {{nombreLower | uppercase }}
-        </p-card>
-    </div>
-    
-    <div class="col-4">
-        <p-card header="lowercase"
-            [subheader]="nombreLower | lowercase">
-             {{nombreLower | lowercase }}
+        <p-card header="uppercase" [subheader]="nombreLower | uppercase">
+            {{nombreLower | uppercase }}
         </p-card>
     </div>
 
     <div class="col-4">
-        <p-card header="titlecase"
-            [subheader]="nombreCompleto | titlecase">
-             {{nombreCompleto | titlecase }}
+        <p-card header="lowercase" [subheader]="nombreLower | lowercase">
+            {{nombreLower | lowercase }}
+        </p-card>
+    </div>
+
+    <div class="col-4">
+        <p-card header="titlecase" [subheader]="nombreCompleto | titlecase">
+            {{nombreCompleto | titlecase }}
         </p-card>
     </div>
 
@@ -50,6 +47,17 @@
                 <li>fecha | date:'yyyy-MMMM-dd - hh:mm:ss' </li>
 
             </ul>
+
+            <hr>
+
+            <ul>
+                <li>fecha | date:'long':'GMT-6'</li>
+                <li>fecha | date:'long':'GMT-4'</li>
+                <li>fecha | date:'long':'GMT-4':'en'</li>
+                <li>fecha | date:'long':'GMT-4':'fr'</li>
+                <li>fecha | date:'long':'GMT-4':'es-MX'</li>
+            </ul>
+
         </p-card>
     </div>
 
@@ -63,6 +71,17 @@
                 <li>{{ fecha | date:'yyyy-MM-dd - hh:mm:ss' }}</li>
                 <li>{{ fecha | date:'yyyy-MMMM-dd - hh:mm:ss' }}</li>
             </ul>
+            
+            <hr>
+
+            <ul>
+                <li>{{ fecha | date:'long':'GMT-6' }}</li>
+                <li>{{ fecha | date:'long':'GMT-4' }}</li>
+                <li>{{ fecha | date:'long':'GMT-4':'en' }}</li>
+                <li>{{ fecha | date:'long':'GMT-4':'fr' }}</li>
+                <li>{{ fecha | date:'long':'GMT-4':'es-MX' }}</li>
+            </ul>
+
         </p-card>
     </div>
 
