@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-root',
@@ -7,20 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
-  nombre: string = 'Rodrigo';
-  valor: number = 1000;
-  obj = {
-    'nombre' : 'Rodrigo'
-  }
+  constructor(private primengConfig: PrimeNGConfig) { }
 
-
-  mostrarNombre(){
-
-    console.log(this.nombre);
-    console.log(this.valor);
-    console.log(this.obj);
-    
-
+  ngOnInit(): void {
+    this.primengConfig.ripple = true;
   }
 
 }

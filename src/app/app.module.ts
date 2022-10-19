@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { AppRouterModule } from './app-router.module';
 import { VentasModule } from './ventas/ventas.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 //Cambiar el local de la app
 import localEs from '@angular/common/locales/es-MX';
@@ -20,6 +22,7 @@ registerLocaleData( localFr );
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRouterModule,
     SharedModule,
     VentasModule,

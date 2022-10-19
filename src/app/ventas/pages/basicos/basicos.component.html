@@ -7,19 +7,19 @@
 
 <div class="grid">
 
-    <div class="col-4">
+    <div class="col-12 lg:col-4">
         <p-card header="uppercase" [subheader]="nombreLower | uppercase">
             {{nombreLower | uppercase }}
         </p-card>
     </div>
-
-    <div class="col-4">
+    <br>
+    <div class="col-12 lg:col-4">
         <p-card header="lowercase" [subheader]="nombreLower | lowercase">
             {{nombreLower | lowercase }}
         </p-card>
     </div>
-
-    <div class="col-4">
+    <br>
+    <div class="col-12 lg:col-4">
         <p-card header="titlecase" [subheader]="nombreCompleto | titlecase">
             {{nombreCompleto | titlecase }}
         </p-card>
@@ -36,7 +36,7 @@
 
 <div class="grid">
 
-    <div class="col-6">
+    <div class="col-12 lg:col-6">
         <p-card>
             <ul>
                 <li>fecha</li>
@@ -61,7 +61,9 @@
         </p-card>
     </div>
 
-    <div class="col-6">
+    <br>
+
+    <div class="col-12 lg:col-6">
         <p-card>
             <ul>
                 <li>{{ fecha }}</li>
